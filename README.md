@@ -25,7 +25,7 @@
 ## 4. 运行方式
 
 - 4.1 在运行代码前，请先配置好'环境配置'中所需要的依赖的安装包
-- 4.2 安装apex，获取地址(http://192.168.1.15:3000/QiranLi0823/apex.git),使用python setup.py install指令安装apex
+- 4.2 安装apex，获取地址(https://github.com/QiranLi0823/UAV-2),使用python setup.py install指令安装apex
 - 4.3 相关数据模块的训练指令根据config文件中的运行指令
 - 4.4 运行时要确定相关数据路径是否正确
 
@@ -52,7 +52,7 @@
 
 
 ## 6. 源代码位置
-- 6.1 (http://gj03.khdxs7.site:22903/QiranLi0823/UAV-1.git)
+- 6.1 (https://github.com/QiranLi0823/UAV-2)
 - 6.2 我们自己训练的权重在github链接上均可下载
 
 
