@@ -1,0 +1,440 @@
+[ 2024-10-20 16:14 ] Model load finished: model.sttformer.Model
+[ 2024-10-20 16:14 ] Data load finished
+[ 2024-10-20 16:14 ] Optimizer load finished: SGD
+[ 2024-10-20 16:14 ] base_lr: 0.1
+[ 2024-10-20 16:14 ] batch_size: 32
+[ 2024-10-20 16:14 ] config: ./config/joint.yaml
+[ 2024-10-20 16:14 ] cuda_visible_device: 0,1,2,3
+[ 2024-10-20 16:14 ] device: [0]
+[ 2024-10-20 16:14 ] eval_interval: 5
+[ 2024-10-20 16:14 ] feeder: feeders.feeder_uav.Feeder
+[ 2024-10-20 16:14 ] ignore_weights: []
+[ 2024-10-20 16:14 ] lr_decay_rate: 0.1
+[ 2024-10-20 16:14 ] model: model.sttformer.Model
+[ 2024-10-20 16:14 ] model_args: {'len_parts': 6, 'num_frames': 120, 'num_joints': 17, 'num_classes': 155, 'num_heads': 3, 'kernel_size': [3, 5], 'num_persons': 2, 'num_channels': 3, 'use_pes': True, 'config': [[64, 64, 16], [64, 64, 16], [64, 128, 32], [128, 128, 32], [128, 256, 64], [256, 256, 64], [256, 256, 64], [256, 256, 64]]}
+[ 2024-10-20 16:14 ] nesterov: True
+[ 2024-10-20 16:14 ] num_epoch: 90
+[ 2024-10-20 16:14 ] num_worker: 0
+[ 2024-10-20 16:14 ] optimizer: SGD
+[ 2024-10-20 16:14 ] print_log: True
+[ 2024-10-20 16:14 ] run_mode: train
+[ 2024-10-20 16:14 ] save_epoch: 80
+[ 2024-10-20 16:14 ] save_score: True
+[ 2024-10-20 16:14 ] show_topk: [1, 5]
+[ 2024-10-20 16:14 ] start_epoch: 0
+[ 2024-10-20 16:14 ] step: [60, 80]
+[ 2024-10-20 16:14 ] test_batch_size: 32
+[ 2024-10-20 16:14 ] test_feeder_args: {'data_path': '../../data/test_A_joint.npy', 'label_path': '../../data/test_A_label.npy', 'split': 'test', 'debug': False, 'window_size': 120, 'p_interval': [0.95], 'vel': False, 'bone': False}
+[ 2024-10-20 16:14 ] train_feeder_args: {'data_path': '../../data/train_joint.npy', 'label_path': '../../data/train_label.npy', 'split': 'train', 'debug': False, 'random_choose': False, 'random_shift': False, 'random_move': False, 'window_size': 120, 'normalization': False, 'random_rot': True, 'p_interval': [0.5, 1], 'vel': False, 'bone': False}
+[ 2024-10-20 16:14 ] warm_up_epoch: 5
+[ 2024-10-20 16:14 ] weight_decay: 0.0004
+[ 2024-10-20 16:14 ] weights: None
+[ 2024-10-20 16:14 ] work_dir: ./work_dir/ntu60/temp
+[ 2024-10-20 16:14 ] # Parameters: 5967699
+[ 2024-10-20 16:14 ] ###***************start training***************###
+[ 2024-10-20 16:14 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 16:30 ] Model load finished: model.sttformer.Model
+[ 2024-10-20 16:30 ] Data load finished
+[ 2024-10-20 16:30 ] Optimizer load finished: SGD
+[ 2024-10-20 16:30 ] base_lr: 0.1
+[ 2024-10-20 16:30 ] batch_size: 32
+[ 2024-10-20 16:30 ] config: ./config/joint.yaml
+[ 2024-10-20 16:30 ] cuda_visible_device: 0,1,2,3
+[ 2024-10-20 16:30 ] device: [0]
+[ 2024-10-20 16:30 ] eval_interval: 5
+[ 2024-10-20 16:30 ] feeder: feeders.feeder_uav.Feeder
+[ 2024-10-20 16:30 ] ignore_weights: []
+[ 2024-10-20 16:30 ] lr_decay_rate: 0.1
+[ 2024-10-20 16:30 ] model: model.sttformer.Model
+[ 2024-10-20 16:30 ] model_args: {'len_parts': 6, 'num_frames': 120, 'num_joints': 17, 'num_classes': 155, 'num_heads': 3, 'kernel_size': [3, 5], 'num_persons': 2, 'num_channels': 3, 'use_pes': True, 'config': [[64, 64, 16], [64, 64, 16], [64, 128, 32], [128, 128, 32], [128, 256, 64], [256, 256, 64], [256, 256, 64], [256, 256, 64]]}
+[ 2024-10-20 16:30 ] nesterov: True
+[ 2024-10-20 16:30 ] num_epoch: 90
+[ 2024-10-20 16:30 ] num_worker: 0
+[ 2024-10-20 16:30 ] optimizer: SGD
+[ 2024-10-20 16:30 ] print_log: True
+[ 2024-10-20 16:30 ] run_mode: train
+[ 2024-10-20 16:30 ] save_epoch: 80
+[ 2024-10-20 16:30 ] save_score: True
+[ 2024-10-20 16:30 ] show_topk: [1, 5]
+[ 2024-10-20 16:30 ] start_epoch: 0
+[ 2024-10-20 16:30 ] step: [60, 80]
+[ 2024-10-20 16:30 ] test_batch_size: 32
+[ 2024-10-20 16:30 ] test_feeder_args: {'data_path': '../../data/test_A_joint.npy', 'label_path': '../../data/test_A_label.npy', 'split': 'test', 'debug': False, 'window_size': 120, 'p_interval': [0.95], 'vel': False, 'bone': False}
+[ 2024-10-20 16:30 ] train_feeder_args: {'data_path': '../../data/train_joint.npy', 'label_path': '../../data/train_label.npy', 'split': 'train', 'debug': False, 'random_choose': False, 'random_shift': False, 'random_move': False, 'window_size': 120, 'normalization': False, 'random_rot': True, 'p_interval': [0.5, 1], 'vel': False, 'bone': False}
+[ 2024-10-20 16:30 ] warm_up_epoch: 5
+[ 2024-10-20 16:30 ] weight_decay: 0.0004
+[ 2024-10-20 16:30 ] weights: None
+[ 2024-10-20 16:30 ] work_dir: ./work_dir/ntu60/temp
+[ 2024-10-20 16:30 ] # Parameters: 5967699
+[ 2024-10-20 16:30 ] ###***************start training***************###
+[ 2024-10-20 16:30 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 16:48 ] Model load finished: model.sttformer.Model
+[ 2024-10-20 16:48 ] Data load finished
+[ 2024-10-20 16:48 ] Optimizer load finished: SGD
+[ 2024-10-20 16:48 ] base_lr: 0.1
+[ 2024-10-20 16:48 ] batch_size: 32
+[ 2024-10-20 16:48 ] config: ./config/joint.yaml
+[ 2024-10-20 16:48 ] cuda_visible_device: 0,1,2,3
+[ 2024-10-20 16:48 ] device: [0]
+[ 2024-10-20 16:48 ] eval_interval: 5
+[ 2024-10-20 16:48 ] feeder: feeders.feeder_uav.Feeder
+[ 2024-10-20 16:48 ] ignore_weights: []
+[ 2024-10-20 16:48 ] lr_decay_rate: 0.1
+[ 2024-10-20 16:48 ] model: model.sttformer.Model
+[ 2024-10-20 16:48 ] model_args: {'len_parts': 6, 'num_frames': 120, 'num_joints': 17, 'num_classes': 155, 'num_heads': 3, 'kernel_size': [3, 5], 'num_persons': 2, 'num_channels': 3, 'use_pes': True, 'config': [[64, 64, 16], [64, 64, 16], [64, 128, 32], [128, 128, 32], [128, 256, 64], [256, 256, 64], [256, 256, 64], [256, 256, 64]]}
+[ 2024-10-20 16:48 ] nesterov: True
+[ 2024-10-20 16:48 ] num_epoch: 90
+[ 2024-10-20 16:48 ] num_worker: 0
+[ 2024-10-20 16:48 ] optimizer: SGD
+[ 2024-10-20 16:48 ] print_log: True
+[ 2024-10-20 16:48 ] run_mode: train
+[ 2024-10-20 16:48 ] save_epoch: 80
+[ 2024-10-20 16:48 ] save_score: True
+[ 2024-10-20 16:48 ] show_topk: [1, 5]
+[ 2024-10-20 16:48 ] start_epoch: 0
+[ 2024-10-20 16:48 ] step: [60, 80]
+[ 2024-10-20 16:48 ] test_batch_size: 32
+[ 2024-10-20 16:48 ] test_feeder_args: {'data_path': '../../data/test_A_joint.npy', 'label_path': '../../data/test_A_label.npy', 'split': 'test', 'debug': False, 'window_size': 120, 'p_interval': [0.95], 'vel': False, 'bone': False}
+[ 2024-10-20 16:48 ] train_feeder_args: {'data_path': '../../data/train_joint.npy', 'label_path': '../../data/train_label.npy', 'split': 'train', 'debug': False, 'random_choose': False, 'random_shift': False, 'random_move': False, 'window_size': 120, 'normalization': False, 'random_rot': True, 'p_interval': [0.5, 1], 'vel': False, 'bone': False}
+[ 2024-10-20 16:48 ] warm_up_epoch: 5
+[ 2024-10-20 16:48 ] weight_decay: 0.0004
+[ 2024-10-20 16:48 ] weights: None
+[ 2024-10-20 16:48 ] work_dir: ./work_dir/ntu60/temp
+[ 2024-10-20 16:48 ] # Parameters: 5967699
+[ 2024-10-20 16:48 ] ###***************start training***************###
+[ 2024-10-20 16:48 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 16:49 ] Model load finished: model.sttformer.Model
+[ 2024-10-20 16:49 ] Data load finished
+[ 2024-10-20 16:49 ] Optimizer load finished: SGD
+[ 2024-10-20 16:49 ] base_lr: 0.1
+[ 2024-10-20 16:49 ] batch_size: 32
+[ 2024-10-20 16:49 ] config: ./config/joint.yaml
+[ 2024-10-20 16:49 ] cuda_visible_device: 0,1,2,3
+[ 2024-10-20 16:49 ] device: [0]
+[ 2024-10-20 16:49 ] eval_interval: 5
+[ 2024-10-20 16:49 ] feeder: feeders.feeder_uav.Feeder
+[ 2024-10-20 16:49 ] ignore_weights: []
+[ 2024-10-20 16:49 ] lr_decay_rate: 0.1
+[ 2024-10-20 16:49 ] model: model.sttformer.Model
+[ 2024-10-20 16:49 ] model_args: {'len_parts': 6, 'num_frames': 120, 'num_joints': 17, 'num_classes': 155, 'num_heads': 3, 'kernel_size': [3, 5], 'num_persons': 2, 'num_channels': 3, 'use_pes': True, 'config': [[64, 64, 16], [64, 64, 16], [64, 128, 32], [128, 128, 32], [128, 256, 64], [256, 256, 64], [256, 256, 64], [256, 256, 64]]}
+[ 2024-10-20 16:49 ] nesterov: True
+[ 2024-10-20 16:49 ] num_epoch: 90
+[ 2024-10-20 16:49 ] num_worker: 0
+[ 2024-10-20 16:49 ] optimizer: SGD
+[ 2024-10-20 16:49 ] print_log: True
+[ 2024-10-20 16:49 ] run_mode: train
+[ 2024-10-20 16:49 ] save_epoch: 80
+[ 2024-10-20 16:49 ] save_score: True
+[ 2024-10-20 16:49 ] show_topk: [1, 5]
+[ 2024-10-20 16:49 ] start_epoch: 0
+[ 2024-10-20 16:49 ] step: [60, 80]
+[ 2024-10-20 16:49 ] test_batch_size: 32
+[ 2024-10-20 16:49 ] test_feeder_args: {'data_path': '../../data/test_A_joint.npy', 'label_path': '../../data/test_A_label.npy', 'split': 'test', 'debug': False, 'window_size': 120, 'p_interval': [0.95], 'vel': False, 'bone': False}
+[ 2024-10-20 16:49 ] train_feeder_args: {'data_path': '../../data/train_joint.npy', 'label_path': '../../data/train_label.npy', 'split': 'train', 'debug': False, 'random_choose': False, 'random_shift': False, 'random_move': False, 'window_size': 120, 'normalization': False, 'random_rot': True, 'p_interval': [0.5, 1], 'vel': False, 'bone': False}
+[ 2024-10-20 16:49 ] warm_up_epoch: 5
+[ 2024-10-20 16:49 ] weight_decay: 0.0004
+[ 2024-10-20 16:49 ] weights: None
+[ 2024-10-20 16:49 ] work_dir: ./work_dir/ntu60/temp
+[ 2024-10-20 16:49 ] # Parameters: 5967699
+[ 2024-10-20 16:49 ] ###***************start training***************###
+[ 2024-10-20 16:49 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 17:04 ] Model load finished: model.sttformer.Model
+[ 2024-10-20 17:04 ] Data load finished
+[ 2024-10-20 17:04 ] Optimizer load finished: SGD
+[ 2024-10-20 17:04 ] base_lr: 0.1
+[ 2024-10-20 17:04 ] batch_size: 32
+[ 2024-10-20 17:04 ] config: ./config/joint.yaml
+[ 2024-10-20 17:04 ] cuda_visible_device: 0,1,2,3
+[ 2024-10-20 17:04 ] device: [0]
+[ 2024-10-20 17:04 ] eval_interval: 5
+[ 2024-10-20 17:04 ] feeder: feeders.feeder_uav.Feeder
+[ 2024-10-20 17:04 ] ignore_weights: []
+[ 2024-10-20 17:04 ] lr_decay_rate: 0.1
+[ 2024-10-20 17:04 ] model: model.sttformer.Model
+[ 2024-10-20 17:04 ] model_args: {'len_parts': 6, 'num_frames': 120, 'num_joints': 17, 'num_classes': 155, 'num_heads': 3, 'kernel_size': [3, 5], 'num_persons': 2, 'num_channels': 3, 'use_pes': True, 'config': [[64, 64, 16], [64, 64, 16], [64, 128, 32], [128, 128, 32], [128, 256, 64], [256, 256, 64], [256, 256, 64], [256, 256, 64]]}
+[ 2024-10-20 17:04 ] nesterov: True
+[ 2024-10-20 17:04 ] num_epoch: 90
+[ 2024-10-20 17:04 ] num_worker: 0
+[ 2024-10-20 17:04 ] optimizer: SGD
+[ 2024-10-20 17:04 ] print_log: True
+[ 2024-10-20 17:04 ] run_mode: train
+[ 2024-10-20 17:04 ] save_epoch: 80
+[ 2024-10-20 17:04 ] save_score: True
+[ 2024-10-20 17:04 ] show_topk: [1, 5]
+[ 2024-10-20 17:04 ] start_epoch: 0
+[ 2024-10-20 17:04 ] step: [60, 80]
+[ 2024-10-20 17:04 ] test_batch_size: 32
+[ 2024-10-20 17:04 ] test_feeder_args: {'data_path': '../../data/test_A_joint.npy', 'label_path': '../../data/test_A_label.npy', 'split': 'test', 'debug': False, 'window_size': 120, 'p_interval': [0.95], 'vel': False, 'bone': False}
+[ 2024-10-20 17:04 ] train_feeder_args: {'data_path': '../../data/train_joint.npy', 'label_path': '../../data/train_label.npy', 'split': 'train', 'debug': False, 'random_choose': False, 'random_shift': False, 'random_move': False, 'window_size': 120, 'normalization': False, 'random_rot': True, 'p_interval': [0.5, 1], 'vel': False, 'bone': False}
+[ 2024-10-20 17:04 ] warm_up_epoch: 5
+[ 2024-10-20 17:04 ] weight_decay: 0.0004
+[ 2024-10-20 17:04 ] weights: None
+[ 2024-10-20 17:04 ] work_dir: ./work_dir/ntu60/temp
+[ 2024-10-20 17:04 ] # Parameters: 5967699
+[ 2024-10-20 17:04 ] ###***************start training***************###
+[ 2024-10-20 17:04 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 17:07 ] training: epoch: 1, loss: 4.7170, top1: 1.72%, lr: 0.020000
+[ 2024-10-20 17:07 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 17:10 ] training: epoch: 2, loss: 4.2134, top1: 4.52%, lr: 0.040000
+[ 2024-10-20 17:10 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 17:12 ] training: epoch: 3, loss: 3.6567, top1: 10.27%, lr: 0.060000
+[ 2024-10-20 17:12 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 17:15 ] training: epoch: 4, loss: 3.2519, top1: 17.23%, lr: 0.080000
+[ 2024-10-20 17:15 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 17:18 ] training: epoch: 5, loss: 3.0172, top1: 22.08%, lr: 0.100000
+[ 2024-10-20 17:18 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 17:21 ] training: epoch: 6, loss: 2.7875, top1: 27.59%, lr: 0.100000
+[ 2024-10-20 17:21 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 17:24 ] training: epoch: 7, loss: 2.6526, top1: 31.27%, lr: 0.100000
+[ 2024-10-20 17:24 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 17:26 ] training: epoch: 8, loss: 2.5559, top1: 33.27%, lr: 0.100000
+[ 2024-10-20 17:26 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 17:29 ] training: epoch: 9, loss: 2.4789, top1: 35.12%, lr: 0.100000
+[ 2024-10-20 17:29 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 17:32 ] training: epoch: 10, loss: 2.4204, top1: 36.38%, lr: 0.100000
+[ 2024-10-20 17:32 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 17:35 ] training: epoch: 11, loss: 2.3752, top1: 37.78%, lr: 0.100000
+[ 2024-10-20 17:35 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 17:38 ] training: epoch: 12, loss: 2.3152, top1: 39.12%, lr: 0.100000
+[ 2024-10-20 17:38 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 17:40 ] training: epoch: 13, loss: 2.2934, top1: 39.83%, lr: 0.100000
+[ 2024-10-20 17:40 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 17:43 ] training: epoch: 14, loss: 2.2614, top1: 40.48%, lr: 0.100000
+[ 2024-10-20 17:43 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 17:45 ] training: epoch: 15, loss: 2.2151, top1: 41.81%, lr: 0.100000
+[ 2024-10-20 17:45 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 17:47 ] training: epoch: 16, loss: 2.2072, top1: 41.93%, lr: 0.100000
+[ 2024-10-20 17:47 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 17:50 ] training: epoch: 17, loss: 2.1915, top1: 42.43%, lr: 0.100000
+[ 2024-10-20 17:50 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 17:52 ] training: epoch: 18, loss: 2.1754, top1: 42.38%, lr: 0.100000
+[ 2024-10-20 17:52 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 17:55 ] training: epoch: 19, loss: 2.1529, top1: 42.71%, lr: 0.100000
+[ 2024-10-20 17:55 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 17:57 ] training: epoch: 20, loss: 2.1689, top1: 42.66%, lr: 0.100000
+[ 2024-10-20 17:57 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 17:59 ] training: epoch: 21, loss: 2.1273, top1: 44.11%, lr: 0.100000
+[ 2024-10-20 17:59 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 18:02 ] training: epoch: 22, loss: 2.1148, top1: 44.11%, lr: 0.100000
+[ 2024-10-20 18:02 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 18:04 ] training: epoch: 23, loss: 2.0971, top1: 44.77%, lr: 0.100000
+[ 2024-10-20 18:04 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 18:07 ] training: epoch: 24, loss: 2.0953, top1: 44.55%, lr: 0.100000
+[ 2024-10-20 18:07 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 18:09 ] training: epoch: 25, loss: 2.0776, top1: 44.86%, lr: 0.100000
+[ 2024-10-20 18:09 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 18:11 ] training: epoch: 26, loss: 2.0730, top1: 45.72%, lr: 0.100000
+[ 2024-10-20 18:11 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 18:14 ] training: epoch: 27, loss: 2.0468, top1: 45.73%, lr: 0.100000
+[ 2024-10-20 18:14 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 18:16 ] training: epoch: 28, loss: 2.0593, top1: 45.43%, lr: 0.100000
+[ 2024-10-20 18:16 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 18:19 ] training: epoch: 29, loss: 2.0485, top1: 45.34%, lr: 0.100000
+[ 2024-10-20 18:19 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 18:21 ] training: epoch: 30, loss: 2.0384, top1: 46.35%, lr: 0.100000
+[ 2024-10-20 18:21 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 18:23 ] training: epoch: 31, loss: 2.0318, top1: 46.06%, lr: 0.100000
+[ 2024-10-20 18:23 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 18:26 ] training: epoch: 32, loss: 2.0159, top1: 46.89%, lr: 0.100000
+[ 2024-10-20 18:26 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 18:29 ] training: epoch: 33, loss: 2.0178, top1: 46.66%, lr: 0.100000
+[ 2024-10-20 18:29 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 18:31 ] training: epoch: 34, loss: 2.0123, top1: 46.94%, lr: 0.100000
+[ 2024-10-20 18:31 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 18:34 ] training: epoch: 35, loss: 2.0070, top1: 46.75%, lr: 0.100000
+[ 2024-10-20 18:34 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 18:36 ] training: epoch: 36, loss: 2.0026, top1: 46.62%, lr: 0.100000
+[ 2024-10-20 18:36 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 18:39 ] training: epoch: 37, loss: 2.0017, top1: 47.12%, lr: 0.100000
+[ 2024-10-20 18:39 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 18:42 ] training: epoch: 38, loss: 1.9919, top1: 46.91%, lr: 0.100000
+[ 2024-10-20 18:42 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 18:44 ] training: epoch: 39, loss: 1.9808, top1: 47.72%, lr: 0.100000
+[ 2024-10-20 18:44 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 18:47 ] training: epoch: 40, loss: 1.9741, top1: 47.76%, lr: 0.100000
+[ 2024-10-20 18:47 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 18:49 ] training: epoch: 41, loss: 1.9790, top1: 47.75%, lr: 0.100000
+[ 2024-10-20 18:49 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 18:52 ] training: epoch: 42, loss: 1.9699, top1: 47.57%, lr: 0.100000
+[ 2024-10-20 18:52 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 18:54 ] training: epoch: 43, loss: 1.9641, top1: 47.47%, lr: 0.100000
+[ 2024-10-20 18:54 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 18:57 ] training: epoch: 44, loss: 1.9563, top1: 48.32%, lr: 0.100000
+[ 2024-10-20 18:57 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 19:00 ] training: epoch: 45, loss: 1.9550, top1: 48.17%, lr: 0.100000
+[ 2024-10-20 19:00 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 19:02 ] training: epoch: 46, loss: 1.9578, top1: 48.15%, lr: 0.100000
+[ 2024-10-20 19:02 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 19:05 ] training: epoch: 47, loss: 1.9446, top1: 48.26%, lr: 0.100000
+[ 2024-10-20 19:05 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 19:07 ] training: epoch: 48, loss: 1.9549, top1: 47.97%, lr: 0.100000
+[ 2024-10-20 19:07 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 19:10 ] training: epoch: 49, loss: 1.9428, top1: 48.61%, lr: 0.100000
+[ 2024-10-20 19:10 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 19:13 ] training: epoch: 50, loss: 1.9389, top1: 48.20%, lr: 0.100000
+[ 2024-10-20 19:13 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 19:15 ] training: epoch: 51, loss: 1.9411, top1: 48.09%, lr: 0.100000
+[ 2024-10-20 19:15 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 19:18 ] training: epoch: 52, loss: 1.9443, top1: 48.63%, lr: 0.100000
+[ 2024-10-20 19:18 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 19:20 ] training: epoch: 53, loss: 1.9315, top1: 49.31%, lr: 0.100000
+[ 2024-10-20 19:20 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 19:23 ] training: epoch: 54, loss: 1.9270, top1: 48.54%, lr: 0.100000
+[ 2024-10-20 19:23 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 19:26 ] training: epoch: 55, loss: 1.9240, top1: 49.11%, lr: 0.100000
+[ 2024-10-20 19:26 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 19:28 ] training: epoch: 56, loss: 1.9175, top1: 48.99%, lr: 0.100000
+[ 2024-10-20 19:28 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 19:31 ] training: epoch: 57, loss: 1.9277, top1: 48.46%, lr: 0.100000
+[ 2024-10-20 19:31 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 19:33 ] training: epoch: 58, loss: 1.9169, top1: 49.01%, lr: 0.100000
+[ 2024-10-20 19:33 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 19:36 ] training: epoch: 59, loss: 1.9132, top1: 48.82%, lr: 0.100000
+[ 2024-10-20 19:36 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 19:38 ] training: epoch: 60, loss: 1.9095, top1: 49.42%, lr: 0.100000
+[ 2024-10-20 19:38 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 19:41 ] training: epoch: 61, loss: 1.4579, top1: 61.57%, lr: 0.010000
+[ 2024-10-20 19:41 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 19:44 ] training: epoch: 62, loss: 1.3059, top1: 65.22%, lr: 0.010000
+[ 2024-10-20 19:44 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 19:46 ] training: epoch: 63, loss: 1.2369, top1: 66.90%, lr: 0.010000
+[ 2024-10-20 19:46 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 19:49 ] training: epoch: 64, loss: 1.1895, top1: 67.95%, lr: 0.010000
+[ 2024-10-20 19:49 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 19:51 ] training: epoch: 65, loss: 1.1581, top1: 68.52%, lr: 0.010000
+[ 2024-10-20 19:51 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 19:54 ] training: epoch: 66, loss: 1.1246, top1: 69.63%, lr: 0.010000
+[ 2024-10-20 19:54 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 19:57 ] training: epoch: 67, loss: 1.0924, top1: 70.25%, lr: 0.010000
+[ 2024-10-20 19:57 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 19:59 ] training: epoch: 68, loss: 1.0647, top1: 70.83%, lr: 0.010000
+[ 2024-10-20 19:59 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 20:02 ] training: epoch: 69, loss: 1.0396, top1: 71.48%, lr: 0.010000
+[ 2024-10-20 20:02 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 20:04 ] training: epoch: 70, loss: 1.0198, top1: 71.75%, lr: 0.010000
+[ 2024-10-20 20:04 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 20:07 ] training: epoch: 71, loss: 1.0072, top1: 72.40%, lr: 0.010000
+[ 2024-10-20 20:07 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 20:10 ] training: epoch: 72, loss: 0.9833, top1: 72.73%, lr: 0.010000
+[ 2024-10-20 20:10 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 20:12 ] training: epoch: 73, loss: 0.9748, top1: 72.78%, lr: 0.010000
+[ 2024-10-20 20:12 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 20:15 ] training: epoch: 74, loss: 0.9492, top1: 73.87%, lr: 0.010000
+[ 2024-10-20 20:15 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 20:17 ] training: epoch: 75, loss: 0.9397, top1: 74.11%, lr: 0.010000
+[ 2024-10-20 20:17 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 20:20 ] training: epoch: 76, loss: 0.9250, top1: 74.45%, lr: 0.010000
+[ 2024-10-20 20:20 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 20:23 ] training: epoch: 77, loss: 0.9165, top1: 74.05%, lr: 0.010000
+[ 2024-10-20 20:23 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 20:25 ] training: epoch: 78, loss: 0.9102, top1: 74.76%, lr: 0.010000
+[ 2024-10-20 20:25 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 20:27 ] training: epoch: 79, loss: 0.8920, top1: 75.31%, lr: 0.010000
+[ 2024-10-20 20:27 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 20:30 ] training: epoch: 80, loss: 0.8748, top1: 75.90%, lr: 0.010000
+[ 2024-10-20 20:30 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 20:32 ] training: epoch: 81, loss: 0.6903, top1: 81.69%, lr: 0.001000
+[ 2024-10-20 20:32 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 20:35 ] training: epoch: 82, loss: 0.6132, top1: 83.83%, lr: 0.001000
+[ 2024-10-20 20:35 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 20:37 ] training: epoch: 83, loss: 0.5906, top1: 84.93%, lr: 0.001000
+[ 2024-10-20 20:37 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 20:39 ] training: epoch: 84, loss: 0.5714, top1: 85.40%, lr: 0.001000
+[ 2024-10-20 20:39 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 20:42 ] training: epoch: 85, loss: 0.5484, top1: 86.03%, lr: 0.001000
+[ 2024-10-20 20:42 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 20:44 ] training: epoch: 86, loss: 0.5397, top1: 86.32%, lr: 0.001000
+[ 2024-10-20 20:44 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 20:47 ] training: epoch: 87, loss: 0.5246, top1: 86.80%, lr: 0.001000
+[ 2024-10-20 20:47 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 20:49 ] training: epoch: 88, loss: 0.5139, top1: 86.71%, lr: 0.001000
+[ 2024-10-20 20:49 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 20:51 ] training: epoch: 89, loss: 0.5041, top1: 87.27%, lr: 0.001000
+[ 2024-10-20 20:51 ] adjust learning rate, using warm up, epoch: 5
+[ 2024-10-20 20:54 ] training: epoch: 90, loss: 0.4968, top1: 87.54%, lr: 0.001000
+[ 2024-10-20 20:54 ] Done.
+
+[ 2024-10-20 21:20 ] Load weights from ./weights/stt_J.pt
+[ 2024-10-20 21:20 ] Model load finished: model.sttformer.Model
+[ 2024-10-20 21:20 ] Data load finished
+[ 2024-10-20 21:27 ] Load weights from ./weights/stt_J.pt
+[ 2024-10-20 21:27 ] Model load finished: model.sttformer.Model
+[ 2024-10-20 21:27 ] Data load finished
+[ 2024-10-20 21:34 ] Load weights from ./weights/stt_J.pt
+[ 2024-10-20 21:34 ] Model load finished: model.sttformer.Model
+[ 2024-10-20 21:34 ] Data load finished
+[ 2024-10-20 21:35 ] Load weights from ./weights/stt_J.pt
+[ 2024-10-20 21:35 ] Model load finished: model.sttformer.Model
+[ 2024-10-20 21:35 ] Data load finished
+[ 2024-10-20 21:36 ] Load weights from ./weights/stt_J.pt
+[ 2024-10-20 21:37 ] Model load finished: model.sttformer.Model
+[ 2024-10-20 21:37 ] Data load finished
+[ 2024-10-20 21:46 ] Load weights from ./weights/stt_J.pt
+[ 2024-10-20 21:46 ] Model load finished: model.sttformer.Model
+[ 2024-10-20 21:46 ] Data load finished
+[ 2024-10-20 21:47 ] Load weights from ./weights/stt_J.pt
+[ 2024-10-20 21:47 ] Model load finished: model.sttformer.Model
+[ 2024-10-20 21:47 ] Data load finished
+[ 2024-10-20 21:49 ] Load weights from ./weights/stt_J.pt
+[ 2024-10-20 21:49 ] Model load finished: model.sttformer.Model
+[ 2024-10-20 21:49 ] Data load finished
+[ 2024-10-20 21:57 ] Load weights from ./weights/stt_J.pt
+[ 2024-10-20 21:57 ] Model load finished: model.sttformer.Model
+[ 2024-10-20 21:57 ] Data load finished
+[ 2024-10-20 21:57 ] Load weights from ./weights/stt_J.pt
+[ 2024-10-20 21:57 ] Model load finished: model.sttformer.Model
+[ 2024-10-20 21:57 ] Data load finished
+[ 2024-10-20 21:58 ] Load weights from ./weights/stt_J.pt
+[ 2024-10-20 21:58 ] Model load finished: model.sttformer.Model
+[ 2024-10-20 21:58 ] Data load finished
+[ 2024-10-20 22:00 ] Load weights from ./weights/stt_J.pt
+[ 2024-10-20 22:00 ] Model load finished: model.sttformer.Model
+[ 2024-10-20 22:01 ] Data load finished
+[ 2024-10-20 22:02 ] Load weights from ./weights/stt_J.pt
+[ 2024-10-20 22:02 ] Model load finished: model.sttformer.Model
+[ 2024-10-20 22:02 ] Data load finished
+[ 2024-10-20 22:02 ] Load weights from ./weights/stt_J.pt
+[ 2024-10-20 22:02 ] Model load finished: model.sttformer.Model
+[ 2024-10-20 22:02 ] Data load finished
+[ 2024-10-20 22:03 ] Load weights from ./weights/stt_J.pt
+[ 2024-10-20 22:03 ] Model load finished: model.sttformer.Model
+[ 2024-10-20 22:03 ] Data load finished
+[ 2024-10-20 22:03 ] Load weights from ./weights/stt_J.pt
+[ 2024-10-20 22:03 ] Model load finished: model.sttformer.Model
+[ 2024-10-20 22:03 ] Data load finished
+[ 2024-10-20 22:03 ] Load weights from ./weights/stt_J.pt
+[ 2024-10-20 22:03 ] Model load finished: model.sttformer.Model
+[ 2024-10-20 22:03 ] Data load finished
+[ 2024-10-20 22:05 ] Load weights from ./weights/stt_J.pt
+[ 2024-10-20 22:05 ] Model load finished: model.sttformer.Model
+[ 2024-10-20 22:05 ] Data load finished
+[ 2024-10-20 22:06 ] Load weights from ./weights/stt_J.pt
+[ 2024-10-20 22:06 ] Model load finished: model.sttformer.Model
+[ 2024-10-20 22:06 ] Data load finished
+[ 2024-10-20 22:06 ] Load weights from ./weights/stt_J.pt
+[ 2024-10-20 22:06 ] Model load finished: model.sttformer.Model
+[ 2024-10-20 22:07 ] Data load finished
+[ 2024-10-20 22:10 ] Load weights from ./weights/stt_J.pt
+[ 2024-10-20 22:10 ] Model load finished: model.sttformer.Model
+[ 2024-10-20 22:10 ] Data load finished
+[ 2024-10-20 22:23 ] Model load finished: model.sttformer.Model
+[ 2024-10-20 22:23 ] Data load finished
+[ 2024-10-20 22:23 ] Load weights from ./weights/stt_J.npy
+[ 2024-10-20 22:23 ] Load weights from ./weights/stt_J.pt
+[ 2024-10-20 22:23 ] Model load finished: model.sttformer.Model
+[ 2024-10-20 22:23 ] Data load finished
+[ 2024-10-21 11:56 ] Load weights from ./work_dir/ntu60_J/ntu60_J.pt
+[ 2024-10-21 11:56 ] Model load finished: model.sttformer.Model
+[ 2024-10-21 11:56 ] Data load finished
+[ 2024-10-21 13:04 ] Load weights from ./work_dir/ntu60_J/ntu60_J.pt
+[ 2024-10-21 13:04 ] Model load finished: model.sttformer.Model
+[ 2024-10-21 13:04 ] Data load finished
+[ 2024-10-21 22:09 ] Load weights from ./work_dir/ntu60_J/ntu60_J.pt
+[ 2024-10-21 22:09 ] Model load finished: model.sttformer.Model
+[ 2024-10-21 22:09 ] Data load finished
+[ 2024-10-21 22:11 ] Load weights from ./work_dir/ntu60_J/ntu60_J.pt
+[ 2024-10-21 22:11 ] Model load finished: model.sttformer.Model
+[ 2024-10-21 22:11 ] Data load finished
+[ 2024-10-21 22:15 ] Load weights from ./work_dir/ntu60_J/ntu60_J.pt
+[ 2024-10-21 22:15 ] Model load finished: model.sttformer.Model
+[ 2024-10-21 22:15 ] Data load finished

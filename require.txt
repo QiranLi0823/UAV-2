@@ -1,0 +1,10 @@
+packaging
+einops
+PyYAML==6.0.1
+torchpack==0.0.3
+h5py
+
+
+tensorboardX
+tensorboard
+tensorpack

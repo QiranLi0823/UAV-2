@@ -1,0 +1,69 @@
+# command line: main.py --config ./config/uav_csv2/_2.yaml --work-dir ./work_dir/mix_2 --weights ./work_dir/mix_2/runs-90-11520.pt --phase test
+
+base_lr: 0.2
+batch_size: 128
+config: ./config/uav_csv2/_2.yaml
+device: 0
+eval_interval: 5
+feeder: feeders.feeder_uav.Feeder
+ignore_weights: []
+log_interval: 100
+model: model.ske_mixf.Model
+model_args:
+  graph: graph.uav.Graph
+  graph_args:
+    labeling_mode: spatial
+  k: 2
+  num_class: 155
+  num_person: 2
+  num_point: 17
+model_saved_name: ''
+nesterov: true
+num_epoch: 90
+num_worker: 4
+optimizer: SGD
+phase: test
+print_log: true
+save_epoch: 30
+save_interval: 1
+save_score: false
+seed: 1
+show_topk:
+- 1
+- 5
+start_epoch: 0
+step:
+- 35
+- 55
+- 75
+test_batch_size: 128
+test_feeder_args:
+  bone: false
+  data_path: ../../data/test_joint_B.npy
+  debug: false
+  label_path: ../../data/test_B_label.npy
+  p_interval:
+  - 0.95
+  split: test
+  vel: false
+  window_size: 64
+train_feeder_args:
+  bone: false
+  data_path: ../../data/train_joint.npy
+  debug: false
+  label_path: ../../data/train_label.npy
+  normalization: false
+  p_interval:
+  - 0.5
+  - 1
+  random_choose: false
+  random_move: false
+  random_rot: true
+  random_shift: false
+  split: train
+  vel: false
+  window_size: 64
+warm_up_epoch: 5
+weight_decay: 0.0005
+weights: ./work_dir/mix_2/runs-90-11520.pt
+work_dir: ./work_dir/mix_2
