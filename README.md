@@ -25,7 +25,7 @@
 ## 4. 运行方式
 
 - 4.1 在运行代码前，请先配置好'环境配置'中所需要的依赖的安装包
-- 4.2 安装apex，获取地址(https://github.com/QiranLi0823/UAV-2),使用python setup.py install指令安装apex
+- 4.2 安装apex，获取地址(https://github.com/QiranLi0823/UAV-2)，使用python setup.py install指令安装apex
 - 4.3 相关数据模块的训练指令根据config文件中的运行指令
 - 4.4 运行时要确定相关数据路径是否正确
 
