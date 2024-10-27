@@ -129,7 +129,7 @@ python main.py --config <work_dir>/config.yaml --work-dir <work_dir> --phase tes
 ```
 
 最终结果整合保存为形式为
-
+```.
 - pkl-A/
       - mix_1/
          - epoch1_test_score.pkl
