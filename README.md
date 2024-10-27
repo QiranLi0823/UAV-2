@@ -131,56 +131,67 @@ python main.py --config <work_dir>/config.yaml --work-dir <work_dir> --phase tes
 最终结果整合保存为形式为
 ```.
 - pkl-A/
-      - mix_1/
-         - epoch1_test_score.pkl
-      - mix_2/
-         - epoch1_test_score.pkl
-      - mix_6/
-         - epoch1_test_score.pkl
-      - mix_angle_1/
-         - epoch1_test_score.pkl
-      - mix_motion_1/
-         - epoch1_test_score.pkl
-      - mix_motion_2/
-         - epoch1_test_score.pkl
-      - mix_motion_6/
-         - epoch1_test_score.pkl
-      - ntu60_A
-         - epoch1_test_score.pkl
-      - ntu60_B
-         - epoch1_test_score.pkl
-      - ntu60_J
-         - epoch1_test_score.pkl
-      - ntu60_M
-         - epoch1_test_score.pkl   
-            ...
-    - pkl-B/
-      - mix_1/
-         - epoch1_test_score.pkl
-      - mix_2/
-         - epoch1_test_score.pkl
-      - mix_6/
-         - epoch1_test_score.pkl
-      - mix_angle_1/
-         - epoch1_test_score.pkl
-      - mix_motion_1/
-         - epoch1_test_score.pkl
-      - mix_motion_2/
-         - epoch1_test_score.pkl
-      - mix_motion_6/
-         - epoch1_test_score.pkl
-      - ntu60_A
-         - epoch1_test_score.pkl
-      - ntu60_B
-         - epoch1_test_score.pkl
-      - ntu60_J
-         - epoch1_test_score.pkl
-      - ntu60_M
-         - epoch1_test_score.pkl
+   - mix_1/
+      - epoch1_test_score.pkl
+   - mix_2/
+      - epoch1_test_score.pkl
+   - mix_6/
+      - epoch1_test_score.pkl
+   - mix_angle_1/
+      - epoch1_test_score.pkl
+   - mix_motion_1/
+      - epoch1_test_score.pkl
+   - mix_motion_2/
+      - epoch1_test_score.pkl
+   - mix_motion_6/
+      - epoch1_test_score.pkl
+   - ntu60_A
+      - epoch1_test_score.pkl
+   - ntu60_B
+      - epoch1_test_score.pkl
+   - ntu60_J
+      - epoch1_test_score.pkl
+   - ntu60_M
+      - epoch1_test_score.pkl   
          ...
+- pkl-B/
+   - mix_1/
+      - epoch1_test_score.pkl
+   - mix_2/
+      - epoch1_test_score.pkl
+   - mix_6/
+      - epoch1_test_score.pkl
+   - mix_angle_1/
+      - epoch1_test_score.pkl
+   - mix_motion_1/
+      - epoch1_test_score.pkl
+   - mix_motion_2/
+      - epoch1_test_score.pkl
+   - mix_motion_6/
+      - epoch1_test_score.pkl
+   - ntu60_A
+      - epoch1_test_score.pkl
+   - ntu60_B
+      - epoch1_test_score.pkl
+   - ntu60_J
+      - epoch1_test_score.pkl
+   - ntu60_M
+      - epoch1_test_score.pkl
+      ...
 ```
 Then run the command as:
 ```shell
 python ensemble.py
 ```
 
+# Citation
+```.
+@inproceedings{li2024hybrid,
+  title={A Hybrid Multi-Perspective Complementary Model for Human Skeleton-Based Action Recognition},
+  author={Li, Linze and Zhou, Youwei and Hu, Jiannan and Wu, Cong and Xu, Tianyang and Wu, Xiao-Jun},
+  booktitle={2024 IEEE International Conference on Multimedia and Expo Workshops (ICMEW)},
+  pages={1--6},
+  year={2024},
+  organization={IEEE}
+}
+```
